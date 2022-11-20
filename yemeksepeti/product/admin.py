@@ -4,4 +4,8 @@ from .models import Category
 
 # Register your models here.
 
-admin.site.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['title', 'status']
+    list_filter = ['status']
+
+admin.site.register(Category,CategoryAdmin)
