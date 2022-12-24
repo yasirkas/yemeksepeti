@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="{% block description %} Ana Sayfa Açıklama {% endblock %}">
@@ -28,9 +28,11 @@
 
     {% include 'header.html' %}
     {% block sidebar %} {% endblock %}
+
     {% block slider %} {% endblock %}
+
     {% block content %} {% endblock %}
-    {% block body %} {% endblock %}
+
     {% include 'footer.html' %}
     {% block footer %} {% endblock %}
 

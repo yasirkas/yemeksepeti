@@ -1,4 +1,8 @@
 {% load static %}
+<!-- Page Preloder -->
+    <div id="preloder">
+        <div class ="loader"></div>
+    </div>
     <!-- Header Section Begin -->
     <header class="header">
         <div class="header__top">
@@ -7,8 +11,8 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li><i class="fa fa-envelope"></i> yasofood@help.com</li>
+                                <li><b >ACIKINCA AKLA GELEN TEK ADRES</b></li>
                             </ul>
                         </div>
                     </div>
@@ -21,16 +25,16 @@
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
-                                <img src="{% static 'img/language.png'%}" alt="">
-                                <div>English</div>
+                                <img src="{% static 'img/turkbayragi.png'%}" width="25" alt="">
+                                <div>Türkçe(TR)</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
-                                    <li><a href="#">Spanis</a></li>
-                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">İngilizce(EN)</a></li>
+
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="#"><i class="fa fa-user"></i> Giriş</a>
                             </div>
                         </div>
                     </div>
@@ -41,24 +45,23 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="{% static 'img/logo.png'%}" alt=""></a>
+                        <a href="./index.html"><img src="{% static 'img/yasologo.png'%}" width="175" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
+                            <li class="active"><a href="./index.html">Ana Sayfa</a></li>
+                            <li><a href="./shop-grid.html">Sipariş Ver</a></li>
+                            <li><a href="#">Sayfalar</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="./faq.html">Sıkça Sorular Sorular</a></li>
+                                    <li><a href="./contact.html">Hakkımızda</a></li>
+                                    <li><a href="./contact.html">Bize Ulaşın</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+
+
                         </ul>
                     </nav>
                 </div>
@@ -68,7 +71,7 @@
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">Toplam Tutar: <span>150 TL</span></div>
                     </div>
                 </div>
             </div>
