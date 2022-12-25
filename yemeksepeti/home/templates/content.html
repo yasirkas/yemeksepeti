@@ -5,23 +5,23 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Önerilen Lezzetler</h2>
+                        <h2>Bazı Önerilen Lezzetler</h2>
                     </div>
                     <div class="featured__controls">
                         <ul>
                             <li class="active" data-filter="*">Tümü</li>
-                            <li data-filter=".oranges">Hamburger</li>
-                            <li data-filter=".fresh-meat">Pizza</li>
-                            <li data-filter=".vegetables">Çiğ Köfte</li>
-                            <li data-filter=".fastfood">Tavuk Dürüm</li>
+                            <li data-filter=".hamburger">Hamburger</li>
+                            <li data-filter=".pizza">Pizza</li>
+                            <li data-filter=".cigkofte">Çiğ Köfte</li>
+                            <li data-filter=".tavuk">Tavuk</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row featured__filter">
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix hamburger">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-1.jpg'%}">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/burgerking/menuler/bigking.jpg'%}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -29,14 +29,29 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="#">Big King (Burger King)</a></h6>
+                            <h5>75 TL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix pizza">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/pizzahut/menuler/algidamenu1.jpg'%}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Algida Menü 1 (Pizza Hut)</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix cigkofte">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-2.jpg'%}">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/isottocigkofte/ensevilenler/tekimcigkofte.jpg'%}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -44,14 +59,74 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h6><a href="#">Tekim Çiğ Köfte Menü (İsotto)</a></h6>
+                            <h5>65 TL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix tavuk">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/oncudoner/menuler/kazandiran.jpg'%}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Kazandıran Menü (Öncü Döner)</a></h6>
+                            <h5>70 TL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix pizza">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/dominospizza/menuler/ikiliortaboy.jpg'%}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">İkili Orta Boy Pizza (Dominos)</a></h6>
+                            <h5>110 TL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix hamburger">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/mcdonalds/menuler/milliburger.jpg'%}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Milli Burger (Mc Donald's)</a></h6>
+                            <h5>85 TL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix tavuk">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/tavukdunyasi/menuler/tek_kisilik_ziyafet_menusu.jpg'%}">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Tek Kişilik Ziyafet Menüsü (Tavuk Dünyası)</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix tavuk">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-3.jpg'%}">
+                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/product/baruthanepilavcisi/pilav/avantajlimenu.jpg'%}">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -59,83 +134,8 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-4.jpg'%}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-5.jpg'%}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-6.jpg'%}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-7.jpg'%}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{% static 'img/featured/feature-8.jpg'%}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Avantajlı Menü (Baruthane Pilavcısı)</a></h6>
+                            <h5>55 TL</h5>
                         </div>
                     </div>
                 </div>
@@ -150,12 +150,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="banner__pic">
-                        <img src="{% static 'img/banner/banner-1.jpg'%}" alt="">
+                        <img src="{% static 'img/banner/banner-01.jpg'%}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="banner__pic">
-                        <img src="{% static 'img/banner/banner-2.jpg'%}" alt="">
+                        <img src="{% static 'img/banner/banner-02.jpg'%}" alt="">
                     </div>
                 </div>
             </div>
@@ -167,65 +167,66 @@
     <section class="latest-product spad">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>En Sevilen Yemekler</h4>
+                        <h4>En Çok Sipariş Edilenler</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-1.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/burgerking/burger/bigking.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Big King<br>(Burger King)</h6>
+                                        <span>80 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-2.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/pizzahut/ensevilenler/ortaboy.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Orta Boy Pizza<br>(Pizza Hut)</h6>
+                                        <span>75 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-3.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/tavukdunyasi/ensevilenler/kekiklim.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Kekiklim<br>(Tavuk Dünyası)</h6>
+                                        <span>120 TL</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-1.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/oncudoner/menuler/avantajlitavuk.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Avantajlı Tavuk Menü<br>(Öncü Döner)</h6>
+                                        <span>70 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-2.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/sampiyonkokorec/ensevilenler/yarimekmek.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Yarım Ekmek Kokoreç<br>(Şampiyon Kokoreç)</h6>
+                                        <span>65 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-3.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/mcdonalds/menuler/milliburger.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Milli Burger<br>(Mc Donald's</h6>
+                                        <span>90 TL</span>
                                     </div>
                                 </a>
                             </div>
@@ -237,61 +238,62 @@
                     <div class="latest-product__text">
                         <h4>En Sevilen Restoranlar</h4>
                         <div class="latest-product__slider owl-carousel">
-                            <div class="latest-prdouct__slider__item">
+                            <div class="latest-product__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-1.jpg'%}" alt="">
+                                        <img src="{% static 'img/categories/burgerking.png'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h5>Burger King</h5>
+                                        <span>⭐4.8</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-2.jpg'%}" alt="">
+                                        <img src="{% static 'img/categories/oncudoner.png'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h5>Öncü Döner</h5>
+                                        <span>⭐4.7</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-3.jpg'%}" alt="">
+                                        <img src="{% static 'img/categories/tavukdunyasi.png'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h5>Tavuk Dünyası</h5>
+                                        <span>⭐4.6</span>
                                     </div>
                                 </a>
                             </div>
-                            <div class="latest-prdouct__slider__item">
+
+                            <div class="latest-product__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-1.jpg'%}" alt="">
+                                        <img src="{% static 'img/categories/baruthane.png'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h5>Baruthane Pilavcısı</h5>
+                                        <span>⭐4.5</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-2.jpg'%}" alt="">
+                                        <img src="{% static 'img/categories/dominos.png'%}"  alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h5>Dominos Pizza</h5>
+                                        <span>⭐4.3</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-3.jpg'%}" alt="">
+                                        <img src="{% static 'img/categories/isottoresize.png'%}"  alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h5>İsotto Çiğ Köfte </h5>
+                                        <span>⭐4.2</span>
                                     </div>
                                 </a>
                             </div>
@@ -306,58 +308,58 @@
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-1.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/oncudoner/doner/rsz_1tavuk.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Tavuk Dürüm<br>(Öncü Döner)</h6>
+                                        <span>25 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-2.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/isottocigkofte/cigkofte/cigkofte.png'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Çiğ Köfte Dürüm<br>(İsotto)</h6>
+                                        <span>20 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-3.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/baruthanepilavcisi/ensevilenler/ogrencidostu.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Öğrenci Dostu Menü<br>(Baruthane Pilavcısı)</h6>
+                                        <span>35 TL</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-1.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/avsartantuni/tantuni/tavuk.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Tavuk Tantuni Dürüm<br>(Avşar Tantuni)</h6>
+                                        <span>28 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-2.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/tatlicisafa/ensevilenler/tahinlibrownie.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Tahinli Brownie<br>(Tatlıcı Safa)</h6>
+                                        <span>24 TL</span>
                                     </div>
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="{% static 'img/latest-product/lp-3.jpg'%}" alt="">
+                                        <img src="{% static 'img/product/basakevyemekleri/gunlukmenu/tavuklupatates.jpg'%}" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
-                                        <h6>Crab Pool Security</h6>
-                                        <span>$30.00</span>
+                                        <h6>Tavuklu Patates Yemeği<br>(Başak Ev Yemekleri)</h6>
+                                        <span>32 TL</span>
                                     </div>
                                 </a>
                             </div>
