@@ -1,6 +1,12 @@
 {% load static %}
  <!-- Hero Section Begin -->
+<!--Burada index dışı sayfa açıncda sidebar gizlenir ve isteğe bağlı açılabilir
+<section class="hero hero-normal"> -->
+{% if page == 'home'%}
     <section class="hero">
+{% else %}
+    <section class="hero hero-normal">
+{% endif %}
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -44,14 +50,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="{% static 'img/banner/banner-03.jpg'%}">
-                        <div class="hero__text">
-                            <span style="font-size:25px">Enfes Pizzalar ve Daha Birçok Lezzet </span>
-                            <h2 style="color:lightblue">YILBAŞINA ÖZEL EFSANE<br> İNDİRİMLERİ KAÇIRMA!<br /><br>
-                            <a href="#" class="primary-btn">HEMEN SİPARİŞ VER!</a>
-
+                    {% if page == 'home'%}
+                        <div class="hero__item set-bg" data-setbg="{% static 'img/banner/banner-03.jpg'%}">
+                            <div class="hero__text">
+                                <span style="font-size:25px">Enfes Pizzalar ve Daha Birçok Lezzet </span>
+                                <h2 style="color:lightblue">YILBAŞINA ÖZEL EFSANE<br> İNDİRİMLERİ KAÇIRMA!</h2><br /><br>
+                                <a href="#" class="primary-btn">HEMEN SİPARİŞ VER!</a>
+                            </div>
                         </div>
-                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
