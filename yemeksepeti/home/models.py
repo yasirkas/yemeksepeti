@@ -1,6 +1,8 @@
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 
+from django.forms import ModelForm, TextInput, Textarea
+
 # Create your models here.
 
 class Setting(models.Model):
@@ -36,3 +38,30 @@ class Setting(models.Model):
     def __str__(self):
         return self.title
 
+
+class ContactFormMessage(models.Model):
+    STATUS = (
+        ('New','New'),
+        ('Read','Read'),
+    )
+    name = models.CharField(blank=True,max_length=50)
+    email = models.CharField(blank=True,max_length=50)
+    message = models.CharField(blank=True,max_length=300)
+    status = models.CharField(max_length=10,choices=STATUS,default='New')
+    ip = models.CharField(blank=True, max_length=20)
+    note = models.CharField(blank=True, max_length=200)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+class ContactForm(ModelForm):
+    class Meta:
+        model = ContactFormMessage
+        fields = ['name','email','message']
+        widgets = {
+            'name': TextInput(attrs={'class':'input','placeholder':'Ad & Soyad'}),
+            'email': TextInput(attrs={'class': 'input', 'placeholder': 'Email Adresi'}),
+            'message': Textarea(attrs={'class': 'input', 'placeholder': 'Mesajınız'}),
+        }
